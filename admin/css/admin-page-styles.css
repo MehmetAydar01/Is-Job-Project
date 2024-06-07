@@ -1,0 +1,108 @@
+body {
+    background: #F0F3F2;
+}
+
+.admin-title {
+    text-align: center;
+    margin: 20px;
+}
+
+.admin-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.admin-links a {
+    padding: 10px;
+    background: #ddd;
+    font-size: 1.2rem;
+    color: #183153;
+}
+
+#users, #postings {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#users td, #users th,
+#postings td, #postings th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#users tr:nth-child(even),
+#postings tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#users tr:hover,
+#postings tr:hover {
+    background-color: #ddd;
+}
+
+#users th,
+#postings th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+}
+
+#users td a,
+#postings td a {
+    padding: 8px;
+    font-size: 1.2rem;
+    color: #000;
+    display: inline-block;
+    width: 100%;
+}
+
+#users td a:first-child {
+    margin-bottom: 8px;
+}
+
+#users td a:first-child:hover,
+#postings td a:first-child:hover {
+    background: #183153;
+    color: #fff;
+}
+
+#users td a:last-child:hover,
+#postings td a:last-child:hover {
+    background: red;
+    color: #fff;
+}
+
+#postings {
+    width: 96vw;
+    margin: 20px auto;
+}
+
+#postings .posting-transactions {
+    text-align: center;
+}
+
+#postings .posting-transactions a:first-child {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.cancelOp {
+    display: inline-block;
+    width: 100%;
+    padding: 12px 15px;
+    color: var(--secondary-color);
+    background: #EA3D3E;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: all .4s ease;
+}
+
+.cancelOp:hover {
+    background: red;
+}
